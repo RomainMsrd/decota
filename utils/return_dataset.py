@@ -86,7 +86,7 @@ def return_dataset(args, return_idx=False):
     if args.net == 'alexnet':
         bs = 32
     else:
-        bs = 24
+        bs = 12
 
     source_loader = torch.utils.data.DataLoader(source_dataset, batch_size=bs,
                                                 num_workers=3, shuffle=True,
